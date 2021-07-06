@@ -20,7 +20,8 @@ const routes = [
     component: Mahasiswa
   },
   {
-    path: '/',
+    path: '/regisP',
+    name: 'regisP',
     component: regisP
   },
   {
