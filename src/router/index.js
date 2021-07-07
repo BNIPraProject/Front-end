@@ -1,17 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Courses from '../views/Courses.vue'
+import Courses from '../views/CoursesD.vue'
 import Mahasiswa from '../views/Mahasiswa.vue'
-import regisD from '../views/regisD.vue'
-import regisM from '../views/regisM.vue'
-import regisP from '../views/regisP.vue'
-import loginP from '../views/loginP.vue'
+import CoursesM from '../views/CoursesM.vue'
+import CoursesMe from '../views/CoursesMe.vue'
+import Login from '../components/Login.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Courses',
+    name: 'courses',
     component: Courses
   },
   {
@@ -20,22 +20,20 @@ const routes = [
     component: Mahasiswa
   },
   {
-    path: '/regisP',
-    name: 'regisP',
-    component: regisP
-  },
-  {
     path: '/login',
-    component: loginP
+    name: 'Login',
+    component: Login
   },
   {
-    path: '/regisD',
-    component: regisD
+    path: '/courses',
+    name: 'coursesm',
+    component: CoursesM
   },
   {
-    path: '/regisM',
-    component: regisM
-  }
+    path: '/coursesme',
+    name: 'coursesme',
+    component: CoursesMe
+  },
 ]
 
 const router = new VueRouter({
